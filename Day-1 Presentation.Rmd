@@ -2,18 +2,11 @@
 title: "Basic Descriptive Statistics using R"
 author: "siju.swamy@saintgits.org"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: slidy_presentation
+output: html_document
 footer: "Copyright (c) 2023, saintgits"
 css: custom.css
 ---
-```{css, echo=FALSE}
-h1, h4 {
-  text-align: center;
-  color: blue;
-  font-weight: bold;
-}
 
-```
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
