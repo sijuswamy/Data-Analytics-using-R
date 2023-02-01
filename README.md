@@ -1,4 +1,4 @@
-# Data-Analyics-using-R
+# Data-Analytics-using-R
 Course Repository for ATAL FDP at Sree Budha College of Engineering
 ----
 
