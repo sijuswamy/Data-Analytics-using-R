@@ -21,9 +21,13 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 ## Day-2 Predictive to Prescriptive Analysis
 
 ### Session-1 : Hypothesis testing- Introduction
+
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/design_of_research_tools.Rmd>
-<>
+
+<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Assumptions%20for%20Statistical%20Testing.Rm>
+
 ### Session-2 : General statistical test using R
+
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Compare_means_R_for_Research.Rmd>
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Testing_0f_variance_R_for_research.Rmd>
