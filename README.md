@@ -24,6 +24,7 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/design_of_research_tools.Rmd>
 ### Session-2 : General statistical test using R
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Compare_means_R_for_Research.Rmd>
+<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Testing_0f_variance_R_for_research.Rmd>
 <>
 ### Session-3 : Working with Survey data in R- Case study
 <>
