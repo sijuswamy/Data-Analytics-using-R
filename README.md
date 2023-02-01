@@ -16,6 +16,21 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 
 ### Session-3 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/r%20for%20research.Rmd>
 
+---
+
+## Day-2 Predictive to Prescriptive Analysis
+
+### Session-1 : Hypothesis testing- Introduction
+<>
+### Session-2 : General statistical test using R
+<>
+### Session-3 : Working with Survey data in R- Case study
+<>
+### Session-4 : Journal Publication with R + $\LaTeX$
+<>
+
+
+
 >Link to Statistical Analysis Using R manual:
 
 <https://bookdown.org/siju_swamy/Stat_Lab/>
