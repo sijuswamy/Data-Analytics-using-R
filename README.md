@@ -14,6 +14,8 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 
 ### Session-2 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Fascinating_ggplot2.Rmd>
 
+### Session-3 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/r%20for%20research.Rmd>
+
 >Link to Statistical Analysis Using R manual:
 
 <https://bookdown.org/siju_swamy/Stat_Lab/>
