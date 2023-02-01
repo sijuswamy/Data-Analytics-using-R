@@ -12,7 +12,7 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 
 ### Session-1 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Barplot_Pie_chart.Rmd>
 
-### Session-2 <>
+### Session-2 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Fascinating_ggplot2.Rmd>
 
 >Link to Statistical Analysis Using R manual:
 
