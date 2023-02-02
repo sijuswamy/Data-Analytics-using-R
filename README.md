@@ -38,8 +38,10 @@ Course Repository for ATAL FDP at Sree Budha College of Engineering
 
 Please fill up the form:
 <https://forms.gle/QkGdFvLsWbqLh14C7>
+
+Link to the source file for fruit data analysis:
+<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Analysis%20of%20fruit%20preference%20data.Rmd>
 ### Session-4 : Journal Publication with R + $\LaTeX$
-<>
 
 
 
