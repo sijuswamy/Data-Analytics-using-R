@@ -308,3 +308,72 @@ A frequency table (or contingency table) is used to describe categorical variabl
 
 >R function to generate tables: `table()`
 
+### Create some data
+
+Distribution of hair and eye color by sex of 592 students:
+```
+# Hair/eye color data
+df <- as.data.frame(HairEyeColor)
+hair_eye_col <- df[rep(row.names(df), df$Freq), 1:3]
+rownames(hair_eye_col) <- 1:nrow(hair_eye_col)
+head(hair_eye_col)
+```
+
+```
+# hair/eye variables
+Hair <- hair_eye_col$Hair
+Eye <- hair_eye_col$Eye
+```
+
+### Simple frequency distribution: one categorical variable
+
+```
+# Frequency distribution of hair color
+table(Hair)
+```
+
+```
+# Frequency distribution of eye color
+table(Eye)
+```
+```
+# Compute table and convert as data frame
+df <- as.data.frame(table(Hair))
+df
+```
+
+```
+# Visualize using bar plot
+library(ggpubr)
+ggbarplot(df, x = "Hair", y = "Freq")
+```
+
+### Two-way contingency table: Two categorical variables
+```
+tbl2 <- table(Hair , Eye)
+tbl2
+```
+>It’s also possible to use the function `xtabs()`, which will create cross tabulation of data frames with a formula interface.
+
+```
+xtabs(~ Hair + Eye, data = hair_eye_col)
+```
+```
+df <- as.data.frame(tbl2)
+head(df)
+```
+
+```
+# Visualize using bar plot
+library(ggpubr)
+ggbarplot(df, x = "Hair", y = "Freq",
+          color = "Eye", 
+          palette = c("brown", "blue", "gold", "green"))
+```
+
+```
+# position dodge
+ggbarplot(df, x = "Hair", y = "Freq",
+          color = "Eye", position = position_dodge(),
+          palette = c("brown", "blue", "gold", "green"))
+```
