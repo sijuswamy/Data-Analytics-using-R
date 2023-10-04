@@ -2,7 +2,6 @@
 Course Repository for add-on programme at VJCET, Kannur
 ----
 
-## Day-1: Introduction to Descriptive Statistics
 
 ### Introduction
 R is a programming language created and developed in 1991 by two statisticians at the University of Auckland, in New Zealand. It officially became free and open-source only in 1995. For its origins, it provides statistical and graphical techniques, linear and non-linear models, techniques for time series, and many other functionalities. Even if Python is the most common in the Data Science field, R is still widely used for specialized purposes, like in financial companies, research, and healthcare.
@@ -328,7 +327,7 @@ for (i in 1:4)
 ```
 
 
-
+## Day-1: Introduction to Descriptive Statistics
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Day-1%20Presentation.Rmd>
 
