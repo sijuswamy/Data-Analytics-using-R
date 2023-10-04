@@ -379,6 +379,7 @@ ggbarplot(df, x = "Hair", y = "Freq",
 ```
 
 ### Multiway tables: More than two categorical variables
+
 Hair and Eye color distributions by sex using `xtabs()`:
 ```
 xtabs(~Hair + Eye + Sex, data = hair_eye_col)
