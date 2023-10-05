@@ -19,7 +19,7 @@ In the following, we will demonstrate usage for the density, disribution and qua
 ## Normal Distribution
 The normal distribution $N(\mu,\sigma)$ is represented R by `dnorm`, `pnorm`, and `qnorm`, where μ
  is the mean and σ  is the standard deviation. The probability density function of the normal distribution is given by;
- $$f(x)=\dfrac{1}{\sqrt{2\pi\sigma^2}}e^{-1(\frac{x-\mu}{\sqrt{2}\sigma})^2}$$ 
+ $$f(x)=\dfrac{1}{\sqrt{2\pi\sigma^2}}e^{-(\frac{x-\mu}{\sqrt{2}\sigma})^2}$$ 
  
  The probability density `dnorm` and cumulative distribution `pnorm are` defined on the entire real axis.
 
