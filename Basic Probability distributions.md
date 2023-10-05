@@ -104,6 +104,9 @@ prob
 ```
 
 ## Poisson Distribution
+
+The pmf of a Poisson distribution with mean, $\lambda$ is defined as:
+$$P(X=x)=\dfrac{e^{-\lambda}\lambda^x}{x!}$$
 The Poisson distribution f(λ) is represented in R by `dpois`, `ppois`, and `qpois`. The probability density `dpois` and cumulative distribution `ppois` are defined on non-negative integers.
 
 >For the example, we’ll use λ=2.5. To figure out a good range for plotting, we will use the qpois function to find out for a given mean, what is the least integer that bounds the cumulative Poisson distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
@@ -121,4 +124,13 @@ dPoisson25 <- data.frame(N=n,
 ```
 ```
 plot(dPoisson25$N,dPoisson25$Density,type='h',xlab="# samples",ylab="P(n)")
+```
+
+>**Task:** Assume a a ball from the driving range next door lands in your yard at an average rate of 3 balls per hour during the day. What is the probability that 10 or fewer golf balls will land in your yard during the afternoon, assuming the afternoon is 5 hours long?
+
+**Solution:**
+
+```
+# A: mean is 15 = 3 * 5 for the entire afternoon
+ppois(10, 15)
 ```
