@@ -102,3 +102,23 @@ c(lower, upper)
 prob=pnorm(30,20,10)
 prob
 ```
+
+## Poisson Distribution
+The Poisson distribution f(λ) is represented in R by `dpois`, `ppois`, and `qpois`. The probability density `dpois` and cumulative distribution `ppois` are defined on non-negative integers.
+
+>For the example, we’ll use λ=2.5. To figure out a good range for plotting, we will use the qpois function to find out for a given mean, what is the least integer that bounds the cumulative Poisson distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
+
+```
+lower<-qpois(0.001, lambda=2.5)
+upper<-qpois(0.999, lambda=2,5)
+n<-seq(lower,upper,1)
+q<-seq(0.001,0.999,0.001)
+dPoisson25 <- data.frame(N=n, 
+                          Density=dpois(n, lambda=2.5),
+                          Distribution=ppois(n, lambda=2.5))  
+  qPoisson25 <- data.frame(Q=q, Quantile=qpois(q, lambda=2.5))  
+  head(dPoisson25)
+```
+```
+plot(dPoisson25$N,dPoisson25$Density,type='h',xlab="# samples",ylab="P(n)")
+```
