@@ -18,7 +18,10 @@ In the following, we will demonstrate usage for the density, disribution and qua
 
 ## Normal Distribution
 The normal distribution $N(\mu,\sigma)$ is represented R by `dnorm`, `pnorm`, and `qnorm`, where μ
- is the mean and σ  is the standard deviation. The probability density `dnorm` and cumulative distribution `pnorm are` defined on the entire real axis.
+ is the mean and σ  is the standard deviation. The probability density function of the normal distribution is given by;
+ $$f(x)=\dfrac{1}{\sqrt{2\pi\sigma^2}e^{1/2 \frac{x-\mu}{sigma}^2}$$
+ 
+ The probability density `dnorm` and cumulative distribution `pnorm are` defined on the entire real axis.
 
 For example, we will use the standard normal distribution, given by μ=0  and σ=1. The density is very small outside of the interval (-3.5,3.5), so we will restrict the plots to this domain.
 
@@ -49,6 +52,7 @@ plot(dStandardNormal$Z,dStandardNormal$Distribution, type = "l", lwd = 2, axes =
 ```
 
 >**Task 1:** Create a Normal distribution with mean 50 and SD 5. Also plot the distribution.
+**Solution:**
 
 ```
 #define population mean and standard deviation
@@ -87,6 +91,7 @@ prob
 ```
 
 >**Task 2:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. What is the 90% confidence interval around the mean for the expected value of Z?
+**Solution:**
 
 ```
 # A: Use the quantile function
@@ -96,6 +101,7 @@ c(lower, upper)
 ```
 
 >**Task 3:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. Find $P(Z\leq 30)$
+**Solution:**
 
 ```
 # A: use pnorm function
@@ -134,3 +140,5 @@ plot(dPoisson25$N,dPoisson25$Density,type='h',xlab="# samples",ylab="P(n)")
 # A: mean is 15 = 3 * 5 for the entire afternoon
 ppois(10, 15)
 ```
+>**Task:** If a bird flies overhead at an average rate of 1 every 4 hours, what is the probability that at least one bird will fly overhead in the next hour?
+
