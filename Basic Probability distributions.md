@@ -32,3 +32,14 @@ z<-seq(-3.5,3.5,0.1)  # 71 points from -3.5 to 3.5 in 0.1 steps
                                 Quantile=qnorm(q, mean=0, sd=1))  
   head(dStandardNormal)
 ```
+** Plotting the distribution**
+
+```
+# using basic plot function
+plot(z,dStandardNormal, type = "l", lwd = 2, axes = FALSE, xlab = "", ylab = "")
+axis(1, at = -3:3, labels = c("-3s", "-2s", "-1s", "mean", "1s", "2s", "3s"))
+```
+
+```
+ head(qStandardNormal)
+```
