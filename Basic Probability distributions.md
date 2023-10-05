@@ -25,7 +25,7 @@ The normal distribution $N(\mu,\sigma)$ is represented R by `dnorm`, `pnorm`, an
 
 For example, we will use the standard normal distribution, given by μ=0  and σ=1. The density is very small outside of the interval (-3.5,3.5), so we will restrict the plots to this domain.
 
-```
+```r
 z<-seq(-3.5,3.5,0.1)  # 71 points from -3.5 to 3.5 in 0.1 steps
   q<-seq(0.001,0.999,0.001)  # 1999 points from 0.1% to 99.9% on 0.1% steps
   dStandardNormal <- data.frame(Z=z, 
@@ -37,12 +37,12 @@ z<-seq(-3.5,3.5,0.1)  # 71 points from -3.5 to 3.5 in 0.1 steps
 ```
 **Plotting the distribution**
 
-```
+```r
 # using basic plot function
 plot(dStandardNormal$Z,dStandardNormal$Density, type = "l", lwd = 2, axes = FALSE, xlab = "", ylab = "")
 axis(1, at = -3:3, labels = c("-3s", "-2s", "-1s", "mean", "1s", "2s", "3s"))
 ```
-```
+```r
 # plotting cumulative distribution
 plot(dStandardNormal$Z,dStandardNormal$Distribution, type = "l", lwd = 2, axes = TRUE, xlab = "", ylab = "")
 #axis(1, at = -3:3, labels = c("-3s", "-2s", "-1s", "mean", "1s", "2s", "3s"))
@@ -55,7 +55,7 @@ plot(dStandardNormal$Z,dStandardNormal$Distribution, type = "l", lwd = 2, axes =
 
 **Solution:**
 
-```
+```r
 #define population mean and standard deviation
 population_mean <- 50
 population_sd <- 5
@@ -86,7 +86,7 @@ axis(side = 1, at = axis_bounds, pos = 0)
 P(-1<Z<3)&=P(Z\leq 3)-P(Z\leq -1)\\
 &=pnorm(3,6,4)-pnorm(-1,6,4)
 \end{array}
-```
+```r
 prob=pnorm(3,6,4)-pnorm(-1,6,4)
 prob
 ```
@@ -95,7 +95,7 @@ prob
 
 **Solution:**
 
-```
+```r
 # A: Use the quantile function
 upper <- qnorm(0.95, 20, 10)
 lower <- qnorm(0.05, 20, 10)
@@ -106,7 +106,7 @@ c(lower, upper)
 
 **Solution:**
 
-```
+```r
 # A: use pnorm function
 prob=pnorm(30,20,10)
 prob
@@ -130,7 +130,7 @@ lower<-qbinom(0.001, size=100, prob=0.5)
 ```
 **Plotting the distribution**
 
-```
+```r
 plot(dBinom100$N,dBinom100$Density,type='h')
 ```
 
@@ -142,7 +142,7 @@ The Poisson distribution f(λ) is represented in R by `dpois`, `ppois`, and `qpo
 
 >For the example, we’ll use λ=2.5. To figure out a good range for plotting, we will use the qpois function to find out for a given mean, what is the least integer that bounds the cumulative Poisson distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
 
-```
+```r
 lower<-qpois(0.001, lambda=2.5)
 upper<-qpois(0.999, lambda=2,5)
 n<-seq(lower,upper,1)
@@ -153,7 +153,7 @@ dPoisson25 <- data.frame(N=n,
   qPoisson25 <- data.frame(Q=q, Quantile=qpois(q, lambda=2.5))  
   head(dPoisson25)
 ```
-```
+```r
 plot(dPoisson25$N,dPoisson25$Density,type='h',xlab="# samples",ylab="P(n)")
 ```
 
@@ -161,14 +161,14 @@ plot(dPoisson25$N,dPoisson25$Density,type='h',xlab="# samples",ylab="P(n)")
 
 **Solution:**
 
-```
+```r
 # A: mean is 15 = 3 * 5 for the entire afternoon
 ppois(10, 15)
 ```
 >**Task:** If a bird flies overhead at an average rate of 1 every 4 hours, what is the probability that at least one bird will fly overhead in the next hour?
 
 **Solution:**
-```
+```r
 # A: The mean is 0.25 birds per hour.  Subtract of the case that no birds 
 #    will fly over
 1 - ppois(0, 0.25)
