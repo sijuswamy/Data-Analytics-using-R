@@ -108,7 +108,12 @@ c(lower, upper)
 prob=pnorm(30,20,10)
 prob
 ```
+## Binomial Distribution
+The pmf of binomial distribution is given by $$P(x)=\binom n x p^x(1-p)^{n-x}$$
 
+The Binomial distribution f(n,p) is represented in R by dbinom, pbinom, and qbinom. In the formula, n is the number of trials of some random process that can take on one of two discrete values, say 1 for success and 0 for failure, and p is the probability of success for each trial. The probability density dbinom and cumulative distribution pbinom are defined on the non-negative integers up to and including n.
+
+For the example, we’ll look at n=100 and p=0.5, like 100 coin flips. To figure out a good range for plotting, we will use the qbinom function to find out for a given n and p, what is the least integer that bounds the cumulative Binomial distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
 
 ## Poisson Distribution
 
