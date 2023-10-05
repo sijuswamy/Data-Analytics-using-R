@@ -160,11 +160,6 @@ pbinom(4, 10, 0.16)
 qbinom(0.9, 100, 0.5)
 ```
 
-
-
-
-
-
 ## Poisson Distribution
 
 The pmf of a Poisson distribution with mean, $\lambda$ is defined as:
