@@ -109,6 +109,7 @@ prob=pnorm(30,20,10)
 prob
 ```
 
+
 ## Poisson Distribution
 
 The pmf of a Poisson distribution with mean, $\lambda$ is defined as:
