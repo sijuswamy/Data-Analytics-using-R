@@ -114,6 +114,7 @@ prob
 ## Binomial Distribution
 The pmf of binomial distribution is given by $$P(x)=\binom n x p^x(1-p)^{n-x}$$
 
+![](
 The Binomial distribution f(n,p) is represented in R by dbinom, pbinom, and qbinom. In the formula, n is the number of trials of some random process that can take on one of two discrete values, say 1 for success and 0 for failure, and p is the probability of success for each trial. The probability density dbinom and cumulative distribution pbinom are defined on the non-negative integers up to and including n.
 
 For the example, we’ll look at n=100 and p=0.5, like 100 coin flips. To figure out a good range for plotting, we will use the qbinom function to find out for a given n and p, what is the least integer that bounds the cumulative Binomial distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
@@ -198,4 +199,25 @@ ppois(10, 15)
 # A: The mean is 0.25 birds per hour.  Subtract of the case that no birds 
 #    will fly over
 1 - ppois(0, 0.25)
+```
+
+## Exponential Distribution
+The pdf of exponential distribution is $f(r)=re^{-r}$. The Exponential distribution f(r) is represented in R by `dexp`, `pexp`, and `qexp`. In the formula, r is the decay rate of the exponential.The probability density dexp and cumulative distribution pexp are defined on the non-negative reals.
+
+For the example, we’ll use r=0.2. To figure out a good range for plotting, we will use the qexp function to find out for a given rate, what is the least number that bounds the cumulative Exponential distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
+
+```r
+lower <- floor(qexp(0.001, rate=0.2))
+  upper <- ceiling(qexp(0.999, rate=0.2))
+  t <- seq(lower,upper,0.1)
+  q <- seq(0.001,0.999,0.001)
+  dexp02 <- data.frame(T=t, 
+                        Density=dexp(t, rate=0.2),
+                        Distribution=pexp(t, rate=0.2))  
+  qexp02 <- data.frame(Q=q, Quantile=qexp(q, rate=0.2))  
+  head(dexp02)
+```
+
+```r
+plot(dexp02$T,dexp02$Density, type = "l", lwd = 2, axes = TRUE, xlab = "T", ylab = "P(t)")
 ```
