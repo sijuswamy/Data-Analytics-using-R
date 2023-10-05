@@ -325,8 +325,42 @@ for (i in 1:4)
 {if (i%%2==0) print('even') else print('odd')
 }
 ```
+## Functions in `R`
 
+The function is a block of code used to perform an action. It runs only when the function is called. It usually needs parameters, that need to be passed, and returns an output as result. It’s defined with this syntax in R:
 
+```
+function_name <- function(par_1,par_2,…)
+{
+body of function
+}
+```
+
+>**Example:**
+
+Write an R function to find square of an input variable:
+
+```
+square=function(a)
+{
+a*a
+}
+m=1
+## calling the function
+square(m)
+```
+
+>**Task 1:** Create a function to calculate the average of a vector:
+
+```
+average <- function(x)
+{ val = 0
+  for (i in x){val=val+i}
+  av = val/length(x)
+  av
+    }
+average(1:3)
+```
 ## Day-1: Introduction to Descriptive Statistics
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Day-1%20Presentation.Rmd>
