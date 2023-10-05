@@ -142,3 +142,9 @@ ppois(10, 15)
 ```
 >**Task:** If a bird flies overhead at an average rate of 1 every 4 hours, what is the probability that at least one bird will fly overhead in the next hour?
 
+**Solution:**
+```
+# A: The mean is 0.25 birds per hour.  Subtract of the case that no birds 
+#    will fly over
+1 - ppois(0, 0.25)
+```
