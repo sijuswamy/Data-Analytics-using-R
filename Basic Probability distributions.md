@@ -52,6 +52,7 @@ plot(dStandardNormal$Z,dStandardNormal$Distribution, type = "l", lwd = 2, axes =
 ```
 
 >**Task 1:** Create a Normal distribution with mean 50 and SD 5. Also plot the distribution.
+
 **Solution:**
 
 ```
@@ -91,6 +92,7 @@ prob
 ```
 
 >**Task 2:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. What is the 90% confidence interval around the mean for the expected value of Z?
+
 **Solution:**
 
 ```
@@ -100,7 +102,8 @@ lower <- qnorm(0.05, 20, 10)
 c(lower, upper)
 ```
 
->**Task 3:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. Find $P(Z\leq 30)$
+>**Task 3:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. Find $P(Z\leq 30)$.
+
 **Solution:**
 
 ```
@@ -114,6 +117,22 @@ The pmf of binomial distribution is given by $$P(x)=\binom n x p^x(1-p)^{n-x}$$
 The Binomial distribution f(n,p) is represented in R by dbinom, pbinom, and qbinom. In the formula, n is the number of trials of some random process that can take on one of two discrete values, say 1 for success and 0 for failure, and p is the probability of success for each trial. The probability density dbinom and cumulative distribution pbinom are defined on the non-negative integers up to and including n.
 
 For the example, we’ll look at n=100 and p=0.5, like 100 coin flips. To figure out a good range for plotting, we will use the qbinom function to find out for a given n and p, what is the least integer that bounds the cumulative Binomial distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
+
+```r
+lower<-qbinom(0.001, size=100, prob=0.5)
+  upper<-qbinom(0.999, size=100, prob=0.5)
+  n<-seq(lower,upper,1)
+  q<-seq(0.001,0.999,0.001)
+  dBinom100 <- data.frame(N=n, 
+                          Density=dbinom(n, size=100, prob=0.5),
+                          Distribution=pbinom(n, size=100, prob=0.5))  
+  qBinom100 <- data.frame(Q=q, Quantile=qbinom(q, size=100, prob=0.5))
+```
+**Plotting the distribution**
+
+```
+plot(dBinom100$N,dBinom100$Density,type='h')
+```
 
 ## Poisson Distribution
 
