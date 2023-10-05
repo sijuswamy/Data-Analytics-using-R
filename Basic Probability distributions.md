@@ -25,7 +25,7 @@ The normal distribution $N(\mu,\sigma)$ is represented R by `dnorm`, `pnorm`, an
 
 For example, we will use the standard normal distribution, given by μ=0  and σ=1. The density is very small outside of the interval (-3.5,3.5), so we will restrict the plots to this domain.
 
-```r
+```python
 z<-seq(-3.5,3.5,0.1)  # 71 points from -3.5 to 3.5 in 0.1 steps
   q<-seq(0.001,0.999,0.001)  # 1999 points from 0.1% to 99.9% on 0.1% steps
   dStandardNormal <- data.frame(Z=z, 
