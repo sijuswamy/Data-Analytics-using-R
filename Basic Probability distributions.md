@@ -134,6 +134,37 @@ lower<-qbinom(0.001, size=100, prob=0.5)
 plot(dBinom100$N,dBinom100$Density,type='h')
 ```
 
+>**Task:** Assume a coin is weighted so that it comes up heads 60% of the time. What is the prbability that you will obtain 25 or more heads in 50 flips?
+
+**Solution:**
+
+```r
+# A: Use pbinom to get the probability of 25 or less heads, and subtract from 1 
+1 - pbinom(25,50,0.6)
+```
+
+>**Task:** Assume a standard die is rolled 10 times. What it the probability that you will roll fewer than 5 sixes?
+
+**Solution:**
+
+```r
+# A: Use pbinom to sum the cases 0, 1, 2, 3, and 4 and subtract from 1.
+pbinom(4, 10, 0.16)
+```
+>**Task:** Assume you flip a fair coin 100 times. What is the number N that, 90% of the time, the number of heads is less than or equal to N?
+
+**Solution:**
+
+```r
+# A: Use the quantile function.  
+qbinom(0.9, 100, 0.5)
+```
+
+
+
+
+
+
 ## Poisson Distribution
 
 The pmf of a Poisson distribution with mean, $\lambda$ is defined as:
