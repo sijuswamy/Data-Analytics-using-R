@@ -221,3 +221,23 @@ lower <- floor(qexp(0.001, rate=0.2))
 ```r
 plot(dexp02$T,dexp02$Density, type = "l", lwd = 2, axes = TRUE, xlab = "T", ylab = "P(t)")
 ```
+
+>**Task:** Assume the lifetime of a metastable nuclear isomer ζ  is exponentially distributed with a mean lifetime of 20 minutes. What is the probabilty that a ζ  nucleus will decay within the next 15 minutes?
+
+**Solution:**
+
+```r
+# A: The rate is 1/20 = 0.05.  Use pexp to get the probability of decay
+#    in 15 or less minutes 
+pexp(15, 0.05)
+```
+
+>**Task:** Assume that a light bulb has a mean lifetime of 1000 hours. What is the probability that the light bulb survives to 2000 hours?
+
+**Solution:**
+
+```r
+# A: The rate is 1/1000 = 0.001.  Use pexp to get the probability of burnout within
+#    2000 hours, and subtract from 1.
+1 - pexp(2000, 0.001)
+```
