@@ -77,10 +77,28 @@ axis(side = 1, at = axis_bounds, pos = 0)
 >**Task 2:** Assume a random variable $Z$ is distributed according to the normal distribution with mean 6 and standard deviation 4. What is the probability that Z takes on a value between -1 and 3 ?
 
 **Solution**
-$\begin{align}
+\begin{array}{lc}
 P(-1<Z<3)&=P(Z\leq 3)-P(Z\leq -1)\\
-         &=pnorm(3,6,4)-pnorm(-1,6,4)\end{align}$
+&=pnorm(3,6,4)-pnorm(-1,6,4)
+\end{array}
 ```
 prob=pnorm(3,6,4)-pnorm(-1,6,4)
 prob
+```
 
+>**Task 2:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. What is the 90% confidence interval around the mean for the expected value of Z?
+
+```
+# A: Use the quantile function
+upper <- qnorm(0.95, 20, 10)
+lower <- qnorm(0.05, 20, 10)
+c(lower, upper)
+```
+
+>**Task 3:** Assume a random variable Z is distributed according to the normal distribution with mean 20 and standard deviation 10. Find $P(Z\leq 30)$
+
+```
+# A: use pnorm function
+prob=pnorm(30,20,10)
+prob
+```
