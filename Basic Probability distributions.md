@@ -14,3 +14,21 @@ In the following we will demonstrate usage for the density, disribution and quan
 |Uniform    |	dunif(N,size,prob) |	punif(N,size,prob)     |	qunif(Q,size,prob) |
 |Exponential|	dexp(N,rate)       |	pexp(N,rate)           |	qexp(Q,rate)       |
 |χ2         |dchisq(X,df)        |	pchisq(X.df)           |	qchisq(X,df)       |
+
+
+## Normal Distribution
+The normal distribution $N(\mu,\sigma)$ is represented R by `dnorm`, `pnorm`, and `qnorm`, where μ
+ is the mean and σ  is the standard deviation. The probability density `dnorm` and cumulative distribution `pnorm are` defined on the entire real axis.
+
+For example, we will use the standard normal distribution, given by μ=0  and σ=1. The density is very small outside of the interval (-3.5,3.5), so we will restrict the plots to this domain.
+
+```
+z<-seq(-3.5,3.5,0.1)  # 71 points from -3.5 to 3.5 in 0.1 steps
+  q<-seq(0.001,0.999,0.001)  # 1999 points from 0.1% to 99.9% on 0.1% steps
+  dStandardNormal <- data.frame(Z=z, 
+                               Density=dnorm(z, mean=0, sd=1),
+                               Distribution=pnorm(z, mean=0, sd=1))  
+  qStandardNormal <- data.frame(Q=q, 
+                                Quantile=qnorm(q, mean=0, sd=1))  
+  head(dStandardNormal)
+```
