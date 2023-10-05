@@ -74,3 +74,13 @@ axis_bounds <- seq(-sd_axis_bounds * population_sd + population_mean,
                     by = population_sd)
 axis(side = 1, at = axis_bounds, pos = 0)
 ```
+>**Task 2:** Assume a random variable $Z$ is distributed according to the normal distribution with mean 6 and standard deviation 4. What is the probability that Z takes on a value between -1 and 3 ?
+
+**Solution**
+$\begin{align}
+P(-1<Z<3)&=P(Z\leq 3)-P(Z\leq -1)\\
+         &=pnorm(3,6,4)-pnorm(-1,6,4)\end{align}$
+```
+prob=pnorm(3,6,4)-pnorm(-1,6,4)
+prob
+
