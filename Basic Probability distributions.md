@@ -241,3 +241,52 @@ pexp(15, 0.05)
 #    2000 hours, and subtract from 1.
 1 - pexp(2000, 0.001)
 ```
+
+### Uniform distribution
+
+The uniform distribution is a probability distribution where each value in the range from a to b has an equal chance of being selected.
+
+The following formula can be used to determine the likelihood that a value between $x_1$ and $x_2$ will fall within the range from $a$ to $b$.
+```
+P(obtain value between x1 and x2)  =  (x2 – x1) / (b – a)
+```
+
+We’ll utilize R’s two built-in functions to provide answers using the uniform distribution.
+
+They are:
+
+In the formula `dunif(x, min, max)`, where `x` is the value of a random variable and `min` and `max` are the distribution’s minimum and maximum values, respectively, the probability density function (pdf) for the uniform distribution is calculated.
+
+When `x` is the value of a random variable and `min` and `max` are the minimum and maximum values for the distribution, respectively, `punif(x, min, max)` generates the cumulative distribution function (cdf) for the uniform distribution.
+
+Here you may access the complete R documentation for the uniform distribution.
+
+>**Task 1:**: A bus arrives at a bus stop every 8 minutes. What is the chance that the bus will arrive in 5 minutes or less if you arrive at the bus stop?
+
+**Solution:**
+
+Since we want to know the cumulative probability that the bus will arrive in 5 minutes or less, given that the minimum time is 0 minutes and the maximum time is 8 minutes, we can easily use the punif() function to calculate the probability that the bus will arrive in 5 minutes or less.
+
+```r
+punif(5, min=0, max=8)
+```
+
+>**Task 2:** A particular species of frog weighs consistently between 15 and 25 grams. What is the likelihood that a frog you choose at random will weigh between 17 and 19 grams?
+
+**Solution:**
+
+The cumulative probability of a frog weighing less than 19 pounds will be calculated, and the cumulative likelihood of a frog weighing less than 17 pounds will be subtracted using the syntax shown below.
+
+```r
+punif(19, 15, 25) - punif(17, 15, 25)
+```
+
+>**Task 3:** An X game lasts between 120 and 170 minutes on average. How likely is it that a randomly chosen X game would go longer than 200 minutes?
+
+**Solution:**
+
+We may use the formula 1 – to find the answer to this (probability that the game lasts less than 200 minutes).
+
+```r
+1 - punif(200, 120, 170)
+```
