@@ -290,3 +290,7 @@ We may use the formula 1 – to find the answer to this (probability that the ga
 ```r
 1 - punif(200, 120, 170)
 ```
+### χ2 Distribution
+The χ2 (df) distribution is represented in R by `dchisq`, `pchisq`, and `qchisq`. In the formula, df is the number of degrees of freedom. The probability density `dchisq` and cumulative distribution `pchisq` are defined on the non-negative reals.
+
+For the example, we’ll use df=10. To figure out a good range for plotting, we will use the qchisq function to find out for a given rate, what is the least number that bounds the cumulative χ2  distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
