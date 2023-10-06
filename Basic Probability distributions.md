@@ -294,3 +294,20 @@ We may use the formula 1 – to find the answer to this (probability that the ga
 The χ2 (df) distribution is represented in R by `dchisq`, `pchisq`, and `qchisq`. In the formula, df is the number of degrees of freedom. The probability density `dchisq` and cumulative distribution `pchisq` are defined on the non-negative reals.
 
 For the example, we’ll use df=10. To figure out a good range for plotting, we will use the qchisq function to find out for a given rate, what is the least number that bounds the cumulative χ2  distribution above 99.9%, and what is the greatest integer that bounds below at 0.1%.
+
+```r
+lower <- floor(qchisq(0.001, df=10))
+  upper <- ceiling(qchisq(0.999, df=10))
+  x <- seq(lower,upper,0.1)
+  q <- seq(0.001,0.999,0.001)
+  dchisq10 <- data.frame(X=x, 
+                        Density=dchisq(x, df=10),
+                        Distribution=pchisq(x, df=10))  
+  qchisq10 <- data.frame(Q=q, Quantile=qchisq(q, df=10))  
+  head(dchisq10)
+```
+
+```r
+plot(dchisq10$X,dchisq10$Density,, type = "l", lwd = 2, axes = TRUE, xlab = "T", ylab = "P(t)")
+```
+
