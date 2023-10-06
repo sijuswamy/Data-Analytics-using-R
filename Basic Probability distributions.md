@@ -244,7 +244,7 @@ pexp(15, 0.05)
 
 ### Uniform distribution
 
-The uniform distribution is a probability distribution where each value in the range from a to b has an equal chance of being selected.
+The uniform distribution is a probability distribution where each value in the range from a to b has an equal chance of being selected. The pdf of uniform distribution is given by $$p(x)=\dfrac{1}{b-a}$$
 
 The following formula can be used to determine the likelihood that a value between $x_1$ and $x_2$ will fall within the range from $a$ to $b$.
 ```
