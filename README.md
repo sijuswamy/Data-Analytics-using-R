@@ -48,6 +48,7 @@ Link to the source file for Day 4 session:
 >*Extra reading resourses:*
 
 1.[Language Technology and Data Analysis Laboratory](https://ladal.edu.au/gviz.html)
+
 2.[R4WRDS Introductory Course] (https://www.r4wrds.com/intro/)
 
 ---------------------------------------------------------------------------------------------------
@@ -89,6 +90,7 @@ The participants are advised to transform the parameterized report generation ta
 Link to expernal resources:
 
 [R for Data sciences](https://bookdown.org/rdpeng/rprogdatascience/)
+
 [R programming tutorial](https://bookdown.org/nguyenthieu2102/r_programming_tutorial/)
 
 
