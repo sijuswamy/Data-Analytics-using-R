@@ -2,7 +2,6 @@
 Course Repository for add-on programme at VJCET, Kannur
 ----
 
-
 ## Day-3
 
 Day 3 is devoted to advanced data analytics in R programming. The main focus is on how to practically analyze likert-scaled data collected through online forms like `Goggle Form` or `Microsoft Form`. On successful completion of this session, the participant will be able to:
@@ -26,19 +25,68 @@ Link to the `markdown` file:
 ### Part-3
 >**Parameterized report generation**
 
-- Clone the repository into your workspace
-- Run the `Generate.Rmd` for report generation
+- Clone  the repository <> into your workspace
+- Run the `Template.Rmd` for report generation
 
+-----------------------------------------------------------------------------
+## Day 4 (Online Mode)
 
-## Day-2
+### Experimenting with `Geospatial Data` using R
 
-## Day-1: Introduction to Descriptive Statistics
+Link to the source file for Day 4 session:
+<>
+
+>**Reading Geospatial Data**
+>**Visualizing Geospatial Data**
+>**Preparation of web pages using `bookdown` package**
+>**Assignment:** Create web pages of all the `Rmd` files available in the course repositories.
+>Extra reading resourses:
+1.[Language Technology and Data Analysis Laboratory](https://ladal.edu.au/gviz.html)
+2.[R4WRDS Introductory Course] (https://www.r4wrds.com/intro/)
+
+---------------------------------------------------------------------------------------------------
+## Day 5 (Online mode)
+
+### Documentation & Report Generation
+
+Last day is devoted for capstone projects.
+
+**CProject-1 Title:**  `A business model possibility analysis based on customer feedback`
+
+>*Requirements*
+
+The participants are advised to transform the `Fruit data analysis` in to a scientific journal paper with `elsivier` style. The article should have all the requirements as per the journal policies.
+
+**CProject-2 Title:** `Automation of Course Attainment Target fixation of First Year accademics using R`
+
+>*Requirements*
+
+The participants are advised to transform the parameterized report generation task in to a process automation work, which will create Branch specific web pages with proper `tocs` and can be directly connected to a campus website.
+--------------------------------------------------------------------------------------------------------
+## Day-2 - Data processing
+
+- R libraries for data analytics
+- Basic descriptive statistics
+- visualization tools
+- Probability distributions
+- Inferential statistics
+
+## Day-1: Introduction to R programming
+- Introduction of R
+- Installation
+- R in cloud
+- Basics of R programming
+
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Day-1%20Presentation.Rmd>
 
----
+Link to expernal resources:
 
-### Session-3 : Working with Survey data in R- Case study
+[R for Data sciences](https://bookdown.org/rdpeng/rprogdatascience/)
+[R programming tutorial](https://bookdown.org/nguyenthieu2102/r_programming_tutorial/)
+
+
+### Practical Example : Working with Survey data in R- Case study
 
 Please fill up the form:
 <https://forms.gle/QkGdFvLsWbqLh14C7>
