@@ -61,7 +61,7 @@ Last day is devoted for capstone projects.
 
 >*Requirements*
 
-The participants are advised to transform the `Fruit data analysis` in to a scientific journal paper with `elsivier` style. The article should have all the requirements as per the journal policies.
+The participants are advised to transform the `Fruit data analysis` in to a scientific journal paper with `elsevier` style. The article should have all the requirements as per the journal policies.
 
 **CProject-2 Title:** `Automation of Course Attainment Target fixation of First Year accademics using R`
 
