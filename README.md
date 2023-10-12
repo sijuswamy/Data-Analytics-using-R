@@ -2,6 +2,22 @@
 Course Repository for add-on programme at VJCET, Kannur
 ----
 
+
+## Day-3
+
+Day 3 is devoted to advanced data analytics in R programming. The main focus is on how to practically analyze likert-scaled data collected through online forms like `Goggle Form` or `Microsoft Form`. On successful completion of this session, the participant will be able to:
+1. analyze the Likert-scaled data using R
+2. create a report in many format using `yaml` options in R Studio
+3. create a analysis web page in `Github`
+4. create a publication-ready document using `rticle` package
+
+### Part-1
+>**Data analytics of Fruit preference Data**
+Link to the `markdown` file:
+<>
+
+## Day-2
+
 ## Day-1: Introduction to Descriptive Statistics
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Day-1%20Presentation.Rmd>
