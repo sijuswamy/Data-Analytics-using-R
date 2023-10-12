@@ -367,3 +367,8 @@ average(1:3)
 
 ---
 
+### Session-3 : Working with Survey data in R- Case study
+
+Please fill up the form:
+<https://forms.gle/QkGdFvLsWbqLh14C7>
+
