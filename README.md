@@ -60,15 +60,16 @@ Last day is devoted for capstone projects.
 
 **CProject-1 Title:**  `A business model possibility analysis based on customer feedback`
 
->*Requirements*
+**Requirements**
 
-The participants are advised to transform the `Fruit data analysis` in to a scientific journal paper with `elsevier` style. The article should have all the requirements as per the journal policies.
+>The participants are advised to transform the `Fruit data analysis` in to a scientific journal paper with `elsevier` style. The article should have all the requirements as per the journal policies.
 
 **CProject-2 Title:** `Automation of Course Attainment Target fixation of First Year accademics using R`
 
 >*Requirements*
 
 The participants are advised to transform the parameterized report generation task in to a process automation work, which will create Branch specific web pages with proper `tocs` and can be directly connected to a campus website.
+
 --------------------------------------------------------------------------------------------------------
 ## Day-2 - Data processing
 
@@ -77,6 +78,17 @@ The participants are advised to transform the parameterized report generation ta
 - visualization tools
 - Probability distributions
 - Inferential statistics
+
+### Practical Example : Working with Survey data in R- Case study
+
+Please fill up the form:
+<https://forms.gle/QkGdFvLsWbqLh14C7>
+
+Link to the source file for fruit data analysis:
+<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Analysis%20of%20fruit%20preference%20data.Rmd>
+
+Address of datafile- https://raw.githubusercontent.com/sijuswamy/Data-Analytics-using-R/main/Fruit_data.csv
+
 
 ## Day-1: Introduction to R programming
 - Introduction of R
@@ -93,14 +105,4 @@ Link to external resources:
 
 [R programming tutorial](https://bookdown.org/nguyenthieu2102/r_programming_tutorial/)
 
-
-### Practical Example : Working with Survey data in R- Case study
-
-Please fill up the form:
-<https://forms.gle/QkGdFvLsWbqLh14C7>
-
-Link to the source file for fruit data analysis:
-<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Analysis%20of%20fruit%20preference%20data.Rmd>
-
-Address of datafile- https://raw.githubusercontent.com/sijuswamy/Data-Analytics-using-R/main/Fruit_data.csv
 
