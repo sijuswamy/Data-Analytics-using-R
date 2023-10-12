@@ -26,7 +26,7 @@ Link to the `markdown` file:
 >**Parameterized report generation**
 
 - Clone  the repository <https://github.com/sijuswamy/CO-Target-Fixation-Template> into your workspace
-- Run the `Template.Rmd` for report generation
+- Run the `Target_Fixation_template.Rmd` for report generation
 
 -----------------------------------------------------------------------------
 ## Day 4 (Online Mode)
