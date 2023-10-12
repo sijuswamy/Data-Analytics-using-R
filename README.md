@@ -14,7 +14,21 @@ Day 3 is devoted to advanced data analytics in R programming. The main focus is 
 ### Part-1
 >**Data analytics of Fruit preference Data**
 Link to the `markdown` file:
-<>
+<https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Analysis%20of%20fruit%20preference%20data.Rmd>
+
+>**Task 1:** Complete the analysis by running the r codes chunk by chunk and prepare an `html` file by `knitting` the `.Rmd` file.
+### Part-2
+
+>**Report automation:**
+
+>**Task 2:** Generate a complete report of the analysis in `.pdf` format.
+
+### Part-3
+>**Parameterized report generation**
+
+- Clone the repository into your workspace
+- Run the `Generate.Rmd` for report generation
+
 
 ## Day-2
 
