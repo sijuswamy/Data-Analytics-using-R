@@ -87,7 +87,7 @@ The participants are advised to transform the parameterized report generation ta
 
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Day-1%20Presentation.Rmd>
 
-Link to expernal resources:
+Link to external resources:
 
 [R for Data sciences](https://bookdown.org/rdpeng/rprogdatascience/)
 
