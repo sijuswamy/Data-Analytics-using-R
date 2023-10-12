@@ -49,7 +49,7 @@ Link to the source file for Day 4 session:
 
 1.[Language Technology and Data Analysis Laboratory](https://ladal.edu.au/gviz.html)
 
-2.[R4WRDS Introductory Course] (https://www.r4wrds.com/intro/)
+2.[R4WRDS Introductory Course](https://www.r4wrds.com/intro/)
 
 ---------------------------------------------------------------------------------------------------
 ## Day 5 (Online mode)
