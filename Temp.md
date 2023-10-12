@@ -35,7 +35,7 @@ Please fill up the form:
 Link to the source file for fruit data analysis:
 <https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/Analysis%20of%20fruit%20preference%20data.Rmd>
 
-Address of datafile- https://raw.githubusercontent.com/sijuswamy/Data-Analytics-using-R/main/Survey_Data.csv.csv
+Address of datafile- https://raw.githubusercontent.com/sijuswamy/Data-Analytics-using-R/main/Fruit_data.csv
 ### Session-4 : Journal Publication with R + $\LaTeX$
 
 
