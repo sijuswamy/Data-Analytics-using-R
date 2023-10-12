@@ -34,13 +34,19 @@ Link to the `markdown` file:
 ### Experimenting with `Geospatial Data` using R
 
 Link to the source file for Day 4 session:
-<>
+
+[Geospatial Analysis resource](https://github.com/sijuswamy/Data-Analytics-using-R/blob/main/gviz.Rmd)
 
 >**Reading Geospatial Data**
+
 >**Visualizing Geospatial Data**
+
 >**Preparation of web pages using `bookdown` package**
+
 >**Assignment:** Create web pages of all the `Rmd` files available in the course repositories.
->Extra reading resourses:
+
+>*Extra reading resourses:*
+
 1.[Language Technology and Data Analysis Laboratory](https://ladal.edu.au/gviz.html)
 2.[R4WRDS Introductory Course] (https://www.r4wrds.com/intro/)
 
