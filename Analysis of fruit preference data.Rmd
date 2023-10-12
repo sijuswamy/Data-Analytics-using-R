@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```{r}
 # loading the .csv file containing data
 
-df=read.csv("https://raw.githubusercontent.com/sijuswamy/PyWorks/main/Survey_Data.csv",header = TRUE)
+df=read.csv("https://raw.githubusercontent.com/sijuswamy/PyWorks/main/Fruit_data.csv",header = TRUE)
 df=df[,-1]
 size=nrow(df)
 #df
