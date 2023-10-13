@@ -75,7 +75,7 @@ The participants are advised to transform the parameterized report generation ta
 
 - R libraries for data analytics
 - Basic descriptive statistics
-- visualization tools
+- visualization tools 
 - Probability distributions
 - Inferential statistics
 
