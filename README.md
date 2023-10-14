@@ -44,6 +44,7 @@ Link to the source file for Day 4 session:
 >**Preparation of web pages using `bookdown` package**
 
 >**Assignment:** Create web pages of all the `Rmd` files available in the course repositories.
+>*Task:* Visit the site in reference 2, and create a new markdown file with name `introduction to GIS using R.md` in your GitHub repository.
 
 >*Extra reading resourses:*
 
